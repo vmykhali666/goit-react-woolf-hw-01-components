@@ -6,17 +6,17 @@ const GetRandomColor = () => {
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section class={css.statistics}>
-      {title !== undefined && <h2 class={css.title}>{title}</h2>}
+    <section className={css.statistics}>
+      {title !== undefined && <h2 className={css.title}>{title}</h2>}
 
-      <ul class={css.statList}>
+      <ul className={css.statList}>
         {stats.map((stat) => {
           return (
-            <li key={stat.id} class={css.item} style={{
+            <li key={stat.id} className={css.item} style={{
                 backgroundColor: GetRandomColor(),
             }}>
-              <span class={css.label}>{stat.label}</span>
-              <span class={css.percentage}>{stat.percentage}%</span>
+              <span className={css.label}>{stat.label}</span>
+              <span className={css.percentage}>{stat.percentage}%</span>
             </li>
           );
         })}
