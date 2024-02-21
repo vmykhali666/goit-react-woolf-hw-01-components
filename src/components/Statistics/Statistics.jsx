@@ -1,4 +1,4 @@
-import css from "../styles/Statistics.module.css"
+import css from "styles/Statistics.module.css"
 
 const GetRandomColor = () => {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
